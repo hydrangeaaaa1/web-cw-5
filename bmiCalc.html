@@ -50,6 +50,22 @@
     <!-- --------------------------------------------------- -->
     <script>
       function getBMI() {
+        let height = document.getElementById("height").value
+        let weight = document.getElementById("weight").value
+        console.log(height)
+        
+        let bmi = weight/(height*height)
+        console.log(bmi)
+        if (bmi < 20){
+         alert("نحيفاً 🦒")   
+        }else if (bmi > 20 && bmi < 29){
+          alert("وزنك جيد")
+        }
+        else if ( bmi >= 30){
+          alert(" سميناً  🐥")
+        }else {
+          alert(" لا أدري! 🤷🏻‍♀️")
+        }
         // height القيمة التي تدخلها في الحقل الأول تُخزن في المتغير
         // weight القيمة التي تدخلها في الحقل الثاني تُخزن في المتغير
         // (مؤشر كتلة الجسم = الوزن/(الطول*الطول
